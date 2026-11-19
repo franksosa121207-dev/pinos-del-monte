@@ -1,0 +1,148 @@
+/*Configuración General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Colores*/
+:root {
+    --verde-bosque: #174d32;
+    --verde-hoja: #668B52;
+    --beige: #F2E9D5;
+    --cafe: #8B5738;
+    --rojo: #A52E32;
+    --blanco: #FFFFFF;
+
+}
+
+/*Estilo general*/
+body {
+    font-family: Arial, sans-serif;
+    color: var(--verde-bosque);
+    background-color: var(--blanco);
+}
+
+/*Encabezado*/
+.site-header {
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--beige);
+}
+
+/*Nombre del negocio*/
+.brand {
+    color: var(--verde-bosque);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*Navegación*/
+.main-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: var(--verde-bosque);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--verde-hoja);
+}
+
+/*Portada*/
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(12, 45, 29, 0.90),
+            rgba(12, 45, 29, 0.25)
+        ),
+        url("../assets/images/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Contenido de la portada*/
+.hero-content {
+    max-width: 650px;
+    color: var(--blanco);
+}
+
+.hero-subtitle {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+    color: var(--beige);
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/*Botón*/
+.hero-button {
+    display: inline-block;
+    padding: 15px 28px;
+    background-color: var(--verde-hoja);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: var(--cafe);
+}
+
+/*Adaptar a celulares*/
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 5%;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 70px 7%;
+        background-position: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+}
