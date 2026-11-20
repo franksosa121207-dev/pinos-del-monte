@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--beige);
+    background-color: var(--blanco);
 }
 
 /*Nombre del negocio*/
@@ -145,4 +145,286 @@ body {
     .hero-description {
         font-size: 16px;
     }
+    /* Plantación en dispositivos móviles */
+    .plantation {
+        padding: 75px 7%;
+    }
+    .plantation-content h2 {
+        font-size: 30px;
+    }
+    .plantation-content p:last-child {
+        font-size: 16px;
+    }
+
+    /*Adaptar "Visítanos" a celulares*/
+    .visit {
+        padding: 70px 7%;
+    }
+    .visit-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .visit-map {
+        min-height: 250px;
+    }
+    /* Pie de página en dispositivos móviles */
+    .site-footer {
+        padding: 45px 7% 20px;
+    }
+
+    .footer-nav {
+        gap: 18px;
+        margin: 25px 0;
+    }
+
+    .footer-bottom p {
+        line-height: 1.6;
+    }
+}
+
+
+/*Catálogo de árboles*/
+.trees {
+    padding: 90px 10%;
+    background-color: var(--blanco);
+}
+
+/*Encabezado de sección*/
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 55px;
+}
+
+.section-subtitle {
+    color: var(--verde-hoja);
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 4vw, 45px);
+    color: var(--verde-bosque);
+    margin-bottom: 18px;
+}
+
+.section-description {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/*Cuadrícula de árboles*/
+.trees-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/*Tarjetas*/
+.tree-card {
+    background-color: var(--beige);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tree-card:hover {
+    transform: translateY(-5px);
+}
+
+/*Espacio para fotografías*/
+.tree-image {
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E1D5;
+    color: var(--verde-bosque);
+    font-size: 14px;
+}
+
+/*Información del árbol*/
+.tree-info {
+    padding: 22px;
+    text-align: center;
+}
+
+.tree-info h3 {
+    color: var(--verde-bosque);
+    font-size: 19px;
+}
+
+
+/*Catálogo en celulares*/
+.trees {
+    padding: 65px 7%;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.trees-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.tree-image {
+    height: 240px;
+}
+
+.tree-info {
+    padding: 16px 10px;
+}
+
+.tree-info h3 {
+    font-size: 16px;
+}
+
+
+/*Fotografías temporales*/
+.tree-image {
+    position: relative;
+    background:
+        linear-gradient(
+            145deg,
+            #E8EBDD,
+            #D5DDCE
+        );
+    color: var(--verde-bosque);
+    overflow: hidden;
+}
+
+.tree-image span {
+    padding: 10px 16px;
+    border: 1px solid rgba(23, 77, 50, 0.25);
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/*Sección de plantación*/
+.plantation {
+    padding: 100px 10%;
+    background-color: var(--beige);
+    text-align: center;
+}
+
+/*Contenido*/
+.plantation-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.plantation-content h2 {
+    color: var(--verde-bosque);
+    font-size: clamp(30px, 4vw, 45px);
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.plantation-content p:last-child {
+    color: #666666;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/*Sección Visítanos*/
+.visit {
+    padding: 90px 10%;
+    background-color: var(--blanco);
+}
+
+/*Contenido de ubicación*/
+.visit-content {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 40px;
+    align-items: stretch;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*Información de contacto*/
+.visit-info {
+    padding: 35px;
+    background-color: var(--beige);
+    border-radius: 5px;
+}
+
+.visit-info h3 {
+    color: var(--verde-bosque);
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.visit-info p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/*Mapa*/
+.visit-map {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8EBDD;
+    border-radius: 5px;
+    color: var(--verde-bosque);
+    font-size: 14px;
+}
+
+/*Pie de página*/
+.site-footer {
+    background-color: var(--verde-bosque);
+    color: var(--blanco);
+    padding: 55px 10% 20px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.footer-content p {
+    color: var(--beige);
+    font-size: 15px;
+}
+
+/*Navegación del pie de página*/
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin: 30px 0;
+}
+
+.footer-nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--beige);
+}
+
+/* Derechos reservados */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    margin-top: 25px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: var(--beige);
 }
